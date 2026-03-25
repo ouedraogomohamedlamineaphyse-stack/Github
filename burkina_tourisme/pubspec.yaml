@@ -1,0 +1,49 @@
+name: burkina_tourisme
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI & Utils
+  cupertino_icons: ^1.0.8
+  google_nav_bar: ^5.0.6
+  crypto: ^3.0.3
+  cached_network_image: ^3.4.0
+  flutter_rating_bar: ^4.0.1
+  url_launcher: ^6.2.4
+  shared_preferences: ^2.2.2
+  provider: ^6.1.2
+  image_picker: ^1.1.2
+  uuid: ^4.4.0
+  flutter_image_compress: ^2.3.0
+  http: ^1.2.0                  # ← Cloudinary upload (remplace firebase_storage)
+  
+  flutter_launcher_icons: ^0.14.1 
+  # Firebase (storage supprimé)
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+  google_sign_in: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/images/logo.png"
